@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To‑Do | Akshata</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <h1 class="logo">Akshata</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="todo.html" class="active">To‑Do (localStorage)</a></li>
+        <li><a href="products.html">Products (Filter/Sort)</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container page">
+    <h2>To‑Do List (Saved in your browser)</h2>
+
+    <div class="card">
+      <div class="todo-inputs">
+        <input id="todoInput" type="text" placeholder="Add a new task..." />
+        <button class="btn" id="addTodoBtn">Add</button>
+      </div>
+
+      <ul id="todoList" class="todo-list"></ul>
+
+      <div class="todo-actions">
+        <button class="btn-outline" id="clearCompletedBtn">Clear Completed</button>
+        <button class="btn-outline danger" id="clearAllBtn">Clear All</button>
+      </div>
+
+      <p class="muted">Your tasks are stored using <b>localStorage</b> and will persist after refresh.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">© 2025 Akshata Grampurohit</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -3,48 +3,58 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Projects</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Projects | Akshata</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <header>
-    <nav>
+    <nav class="container">
       <h1 class="logo">Akshata</h1>
       <ul class="nav-links">
         <li><a href="index.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="todo.html">To‑Do (localStorage)</a></li>
+        <li><a href="products.html">Products (Filter/Sort)</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="projects-section">
+  <main class="container page">
     <h2>My Projects</h2>
 
-    <div class="project-card">
+    <div class="card">
       <h3>Task 3 – Web Quiz with API</h3>
-      <p>A responsive personal webpage with a JavaScript quiz and real-time motivational quote fetched from an external API.</p>
-      <a href="https://github.com/purohitakshata06/task3-quiz-project-" target="_blank">View on GitHub</a>
+      <p>Responsive page with a JavaScript quiz and real‑time motivational quote via API.</p>
+      <a class="link" href="https://github.com/purohitakshata06/task3-quiz-project-" target="_blank">View on GitHub</a>
     </div>
 
-    <div class="project-card">
-      <h3>Task 2 – Contact Form & To-Do List</h3>
-      <p>Created a contact form and a dynamic to-do list using HTML, CSS, and JavaScript with form validation and responsiveness.</p>
-      <a href="https://github.com/purohitakshata06/pastel-contact-form.git" target="_blank">Contact Form</a>
-      <br />
-      <a href="https://github.com/purohitakshata06/pastel-todo-akshata.git" target="_blank">To-Do List</a>
+    <div class="card">
+      <h3>Task 2 – Contact Form & To‑Do List</h3>
+      <p>Interactive contact form and a dynamic to‑do list built with HTML, CSS, and JS.</p>
+      <p>
+        <a class="link" href="https://github.com/purohitakshata06/pastel-contact-form.git" target="_blank">Contact Form</a> ·
+        <a class="link" href="https://github.com/purohitakshata06/pastel-todo-akshata.git" target="_blank">To‑Do List</a>
+      </p>
     </div>
 
-    <div class="project-card">
-      <h3>Task 1 – Personal Webpage Design</h3>
-      <p>Designed a basic personal webpage using HTML and CSS to showcase introductory web development skills.</p>
-      <a href="https://github.com/purohitakshata06/task-1-basic-webpage.git" target="_blank">View on GitHub</a>
+    <div class="card">
+      <h3>Task 1 – Personal Webpage</h3>
+      <p>Basic webpage using HTML & CSS to practice structure and styling.</p>
+      <a class="link" href="https://github.com/purohitakshata06/task-1-basic-webpage.git" target="_blank">View on GitHub</a>
     </div>
 
+    <div class="card">
+      <h3>Task 4 – Combined Features</h3>
+      <ul>
+        <li><a class="link" href="todo.html">To‑Do App with localStorage</a></li>
+        <li><a class="link" href="products.html">Product Listing with Filter & Sort</a></li>
+      </ul>
+    </div>
   </main>
 
   <footer>
-    <p>© 2025 Akshata Grampurohit</p>
+    <div class="container">© 2025 Akshata Grampurohit</div>
   </footer>
 </body>
 </html>

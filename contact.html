@@ -3,36 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Me</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Contact | Akshata</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <header>
-    <nav>
+    <nav class="container">
       <h1 class="logo">Akshata</h1>
       <ul class="nav-links">
         <li><a href="index.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="todo.html">To‑Do (localStorage)</a></li>
+        <li><a href="products.html">Products (Filter/Sort)</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="contact-section">
+  <main class="container page">
     <h2>Contact Me</h2>
-    <p>If you'd like to get in touch, feel free to drop a message below or email me directly at:</p>
-    <p><strong>📧 purohitakshata06@gmail.com</strong></p>
-
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send</button>
-    </form>
+    <p>Feel free to reach out for collaboration, feedback, or opportunities.</p>
+    <div class="card">
+      <form class="contact-form" onsubmit="event.preventDefault(); alert('Thanks! This is a demo form.');">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button class="btn" type="submit">Send</button>
+      </form>
+      <p class="muted">Or email me: <a href="mailto:purohitakshata06@gmail.com">purohitakshata06@gmail.com</a></p>
+    </div>
   </main>
 
   <footer>
-    <p>© 2025 Akshata Grampurohit</p>
+    <div class="container">© 2025 Akshata Grampurohit</div>
   </footer>
 </body>
 </html>

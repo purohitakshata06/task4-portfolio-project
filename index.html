@@ -1,31 +1,46 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Akshata | Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <header>
-    <nav>
+    <nav class="container">
       <h1 class="logo">Akshata</h1>
       <ul class="nav-links">
-        <li><a href="index.html">About</a></li>
+        <li><a href="index.html" class="active">About</a></li>
         <li><a href="projects.html">Projects</a></li>
+        <li><a href="todo.html">To‑Do (localStorage)</a></li>
+        <li><a href="products.html">Products (Filter/Sort)</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="about-section">
-    <h2>About Me</h2>
-    <p>Hello! I’m Akshata, a 4th-year Electronics & Communication Engineering student with a strong passion for web development. I enjoy building responsive, user-friendly websites using HTML, CSS, and JavaScript.</p>
-    <p>I'm currently upskilling through internship tasks, focusing on both design and logic development. I’m excited to learn, build, and grow!</p>
+  <main class="container page">
+    <section class="hero">
+      <h2>About Me</h2>
+      <p>
+        I’m Akshata, a 4th‑year Electronics & Communication Engineering student, focusing on
+        front‑end development with HTML, CSS, and JavaScript. I love building responsive,
+        accessible UIs and adding interactive logic.
+      </p>
+      <p>
+        This portfolio showcases Task 4 of my internship:
+        a multi‑page site, a To‑Do app with <strong>localStorage</strong>, and a product
+        listing with <strong>filtering & sorting</strong>.
+      </p>
+      <a class="btn" href="projects.html">See My Projects</a>
+    </section>
   </main>
 
   <footer>
-    <p>© 2025 Akshata Grampurohit</p>
+    <div class="container">© 2025 Akshata Grampurohit</div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
+
